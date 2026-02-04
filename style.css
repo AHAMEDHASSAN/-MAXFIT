@@ -596,29 +596,36 @@ body:not(.light-mode) .lang-menu li.selected {
     }
 }
 
-/* LTR Adjustments for English */
-html[dir="ltr"] .hero-container {
-    flex-direction: row;
-    /* Image Right, Text Left */
-}
+/* LTR Adjustments for English (Desktop Only) */
+@media (min-width: 901px) {
+    html[dir="ltr"] .hero-container {
+        flex-direction: row;
+    }
 
-html[dir="ltr"] .hero-text {
-    text-align: left;
-}
+    html[dir="ltr"] .hero-text {
+        text-align: left;
+    }
 
-html[dir="ltr"] .hero-text p {
-    margin-right: auto;
-    margin-left: 0;
+    html[dir="ltr"] .hero-text p {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    html[dir="ltr"] .hero-badge {
+        right: auto;
+        left: -20px;
+    }
 }
 
 /* Media Queries */
 @media (max-width: 900px) {
     .hero-container {
-        flex-direction: column;
-        /* Text top, Image bottom */
-        text-align: center;
+        flex-direction: column !important;
+        /* Force vertical on mobile regardless of LTR/RTL */
+        text-align: center !important;
         padding-top: 40px;
         gap: 30px;
+        display: flex !important;
     }
 
     .hero-text {
@@ -655,12 +662,19 @@ html[dir="ltr"] .hero-text p {
     }
 
     .hero-image {
-        width: 100%;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 20px;
     }
 
     .hero-image img {
-        max-width: 100%;
-        /* Full width within container */
+        width: 100% !important;
+        max-width: 450px !important;
+        /* Cap width for mobile */
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto;
     }
 
     .image-wrapper {
@@ -1501,21 +1515,23 @@ body:not(.light-mode) .reviewer-name {
 
     .review-card {
         position: absolute;
-        left: 50%;
+        left: 5%;
+        /* 5% from left */
         top: 0;
-        transform: translateX(-50%);
+        margin: 0 auto;
         min-width: 90%;
         width: 90%;
         max-width: 90%;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-        margin: 0;
         border-radius: 20px;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         border: 1px solid rgba(0, 0, 0, 0.08);
         z-index: 1;
         background: #fff;
+        transform: none !important;
+        /* Prevent AOS from breaking layout position, though we are not using transform for centering anymore */
     }
 
     .review-card.active {

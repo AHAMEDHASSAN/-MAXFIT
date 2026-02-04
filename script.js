@@ -319,7 +319,8 @@ function updateCarousel() {
 function resetCarousel() {
     currentSlide = 0;
     reviewCards.forEach(card => {
-        card.style.transform = 'translateX(0)';
+        card.style.transform = ''; // Clear inline styles
+        card.classList.remove('active');
     });
 }
 
