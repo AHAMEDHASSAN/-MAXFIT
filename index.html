@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarpemium - Premium Services</title>
+
+    <!-- Google Fonts: Cairo for Arabic, Poppins for English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Professional Full Width Header -->
+    <header class="pro-header">
+        <div class="header-container">
+            <!-- Action Buttons (First child in HTML, appears Right in RTL) -->
+            <div class="action-buttons">
+                <!-- Language Dropdown -->
+                <div class="lang-dropdown">
+                    <button id="lang-btn" class="lang-pill">
+                        <img src="images/Arbic.svg" alt="AR" class="flag-img">
+                        <span class="lang-text">AR</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="lang-menu" id="lang-menu">
+                        <li data-lang="ar" class="selected">
+                            <img src="images/Arbic.svg" alt="Syria" class="flag-img">
+                            <span>العربية</span>
+                        </li>
+                        <li data-lang="en">
+                            <img src="images/Englihsvg.svg" alt="USA" class="flag-img">
+                            <span>English</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Centered Navigation -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero" class="nav-link active" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+                    <li><a href="#features" class="nav-link" data-en="Features" data-ar="المميزات">المميزات</a></li>
+                    <li><a href="#plans" class="nav-link" data-en="Plans" data-ar="الباقات">الباقات</a></li>
+                    <li><a href="#reviews" class="nav-link" data-en="Reviews" data-ar="الآراء">الآراء</a></li>
+                </ul>
+            </nav>
+
+            <!-- Logo Section (Last child in HTML, appears Left in RTL) -->
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-toggle" class="mobile-toggle mobile-only">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-header">
+            <div class="mobile-logo">
+                <div class="logo-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <button id="close-menu" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- Mobile Actions at Top -->
+        <div class="mobile-actions">
+            <!-- Language Dropdown for Mobile -->
+            <div class="lang-dropdown">
+                <button id="lang-btn-mobile" class="lang-pill">
+                    <span class="flag-icon"><img src="images/Arbic.svg" alt="AR"></span>
+                    <span class="lang-text">AR</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-menu" id="lang-menu-mobile">
+                    <li data-lang="ar" class="selected">
+                        <span class="flag-icon"><img src="images/Arbic.svg" alt="AR"></span>
+                        <span>العربية</span>
+                    </li>
+                    <li data-lang="en">
+                        <span class="flag-icon"><img src="images/Englihsvg.svg" alt="EN"></span>
+                        <span>English</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Menu Links -->
+        <ul class="mobile-links">
+            <li><a href="#hero" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+            <li><a href="#features" data-en="Features" data-ar="المميزات">المميزات</a></li>
+            <li><a href="#plans" data-en="Plans" data-ar="الباقات">الباقات</a></li>
+            <li><a href="#reviews" data-en="Reviews" data-ar="الآراء">الآراء</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <!-- Text Content -->
+            <div class="hero-text">
+                <h1 data-en="Best YouTube Premium Subscription" data-ar="أفضل إشتراك يوتيوب بريميوم">أفضل إشتراك يوتيوب
+                    بريميوم</h1>
+                <p data-en="Enjoy a perfect viewing experience without ads with exclusive features and high quality"
+                    data-ar="استمتع بتجربة مشاهدة مثالية بدون إعلانات مع ميزات حصرية وجودة عالية">استمتع بتجربة مشاهدة
+                    مثالية بدون إعلانات مع ميزات حصرية وجودة عالية</p>
+                <a href="https://sarpemium.com/collections/watch" class="hero-button" data-en="Subscribe Now"
+                    data-ar="اشترك الآن واستمتع">اشترك الآن
+                    واستمتع</a>
+            </div>
+
+            <!-- Image Content -->
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/Hero.jpg" alt="YouTube Premium">
+                    <span class="hero-badge" data-en="Best Offer!" data-ar="العرض الأفضل!">العرض الأفضل!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="plans-section">
+        <div class="section-title">
+            <h2 data-en="Choose Your Plan" data-ar="اختر الباقة المناسبة لاحتياجاتك">اختر الباقة المناسبة لاحتياجاتك
+            </h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="plans-container">
+            <!-- Card 1: 3 Months -->
+            <div class="plan-card" data-aos="fade-up">
+                <div class="card-header">
+                    <div class="crown-icon">👑</div>
+                    <h3 data-en="3 Months Subscription" data-ar="اشتراك يوتيوب بريميوم 3 شهور">اشتراك يوتيوب
+                        بريميوم<br>3 شهور</h3>
+                    <p class="price-per-month" data-en="11 SAR / Month" data-ar="11 ريال بالشهر">11 ريال بالشهر</p>
+                </div>
+                <div class="youtube-mockup">
+                    <i class="fa-brands fa-youtube" style="font-size: 40px; color: #ff0000;"></i>
+                </div>
+                <div class="price-area">
+                    <span class="currency" data-en="SAR" data-ar="ريال">ريال</span>
+                    <span class="amount">33</span>
+                </div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Ad-free viewing"
+                            data-ar="مشاهدة بدون إعلانات">مشاهدة بدون إعلانات</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Background play"
+                            data-ar="تشغيل الفيديو في الخلفية">تشغيل الفيديو في الخلفية</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Offline downloads"
+                            data-ar="تنزيل المحتوى للمشاهدة لاحقا">تنزيل المحتوى للمشاهدة لاحقا</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Access to YouTube Music"
+                            data-ar="الوصول إلى يوتيوب ميوزك">الوصول إلى يوتيوب ميوزك</span></li>
+                </ul>
+                <a href="https://sarpemium.com/collections/watch" class="plan-btn" data-en="Subscribe Now"
+                    data-ar="اشترك الآن">اشترك الآن</a>
+            </div>
+
+            <!-- Card 2: 6 Months (Best Choice) -->
+            <div class="plan-card best-choice" data-aos="fade-up" data-aos-delay="100">
+                <div class="best-badge" data-en="Best Choice" data-ar="الأكثر طلباً">الأكثر طلباً</div>
+                <div class="card-header">
+                    <div class="crown-icon">👑</div>
+                    <h3 data-en="6 Months Subscription" data-ar="اشتراك يوتيوب بريميوم 6 شهور">اشتراك يوتيوب
+                        بريميوم<br>6 شهور</h3>
+                    <p class="price-per-month" data-en="8 SAR / Month" data-ar="8 ريال بالشهر">8 ريال بالشهر</p>
+                </div>
+                <div class="youtube-mockup">
+                    <i class="fa-brands fa-youtube" style="font-size: 40px; color: #ff0000;"></i>
+                </div>
+                <div class="price-area">
+                    <span class="currency" data-en="SAR" data-ar="ريال">ريال</span>
+                    <span class="amount">49</span>
+                </div>
+                <div class="savings-tag" data-en="Save 17 SAR" data-ar="توفير 17 ريال">توفير 17 ريال</div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Ad-free viewing"
+                            data-ar="مشاهدة بدون إعلانات">مشاهدة بدون إعلانات</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Background play"
+                            data-ar="تشغيل الفيديو في الخلفية">تشغيل الفيديو في الخلفية</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Offline downloads"
+                            data-ar="تنزيل المحتوى للمشاهدة لاحقا">تنزيل المحتوى للمشاهدة لاحقا</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Access to YouTube Music"
+                            data-ar="الوصول إلى يوتيوب ميوزك">الوصول إلى يوتيوب ميوزك</span></li>
+                </ul>
+                <a href="https://sarpemium.com/collections/watch" class="plan-btn" data-en="Subscribe Now"
+                    data-ar="اشترك الآن">اشترك الآن</a>
+            </div>
+
+            <!-- Card 3: 1 Year -->
+            <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header">
+                    <div class="crown-icon">👑</div>
+                    <h3 data-en="1 Year Subscription" data-ar="اشتراك يوتيوب بريميوم سنة">اشتراك يوتيوب بريميوم<br>سنة
+                    </h3>
+                    <p class="price-per-month" data-en="5 SAR / Month" data-ar="5 ريال بالشهر">5 ريال بالشهر</p>
+                </div>
+                <div class="youtube-mockup">
+                    <i class="fa-brands fa-youtube" style="font-size: 40px; color: #ff0000;"></i>
+                </div>
+                <div class="price-area">
+                    <span class="currency" data-en="SAR" data-ar="ريال">ريال</span>
+                    <span class="amount">64</span>
+                </div>
+                <div class="savings-tag" data-en="Save 68 SAR" data-ar="توفير 68 ريال">توفير 68 ريال</div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Ad-free viewing"
+                            data-ar="مشاهدة بدون إعلانات">مشاهدة بدون إعلانات</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Background play"
+                            data-ar="تشغيل الفيديو في الخلفية">تشغيل الفيديو في الخلفية</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Offline downloads"
+                            data-ar="تنزيل المحتوى للمشاهدة لاحقا">تنزيل المحتوى للمشاهدة لاحقا</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Access to YouTube Music"
+                            data-ar="الوصول إلى يوتيوب ميوزك">الوصول إلى يوتيوب ميوزك</span></li>
+                </ul>
+                <a href="https://sarpemium.com/collections/watch" class="plan-btn" data-en="Subscribe Now"
+                    data-ar="اشترك الآن">اشترك الآن</a>
+            </div>
+
+            <!-- Card 4: 2 Years -->
+            <div class="plan-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-header">
+                    <div class="crown-icon">👑</div>
+                    <h3 data-en="2 Years Subscription" data-ar="اشتراك يوتيوب بريميوم سنتين">اشتراك يوتيوب
+                        بريميوم<br>سنتين</h3>
+                    <p class="price-per-month" data-en="5 SAR / Month" data-ar="5 ريال بالشهر">5 ريال بالشهر</p>
+                </div>
+                <div class="youtube-mockup">
+                    <i class="fa-brands fa-youtube" style="font-size: 40px; color: #ff0000;"></i>
+                </div>
+                <div class="price-area">
+                    <span class="currency" data-en="SAR" data-ar="ريال">ريال</span>
+                    <span class="amount">120</span>
+                </div>
+                <div class="savings-tag" data-en="Save 144 SAR" data-ar="توفير 144 ريال">توفير 144 ريال</div>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Ad-free viewing"
+                            data-ar="مشاهدة بدون إعلانات">مشاهدة بدون إعلانات</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Background play"
+                            data-ar="تشغيل الفيديو في الخلفية">تشغيل الفيديو في الخلفية</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Offline downloads"
+                            data-ar="تنزيل المحتوى للمشاهدة لاحقا">تنزيل المحتوى للمشاهدة لاحقا</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Access to YouTube Music"
+                            data-ar="الوصول إلى يوتيوب ميوزك">الوصول إلى يوتيوب ميوزك</span></li>
+                </ul>
+                <a href="https://sarpemium.com/collections/watch" class="plan-btn" data-en="Subscribe Now"
+                    data-ar="اشترك الآن">اشترك الآن</a>
+            </div>
+
+            <!-- Card 5: VIP (Special) -->
+            <div class="plan-card vip-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="vip-badge" data-en="VIP Subscription" data-ar="اشتراك VIP">اشتراك VIP</div>
+                <div class="card-header">
+                    <div class="diamond-icon">💎</div>
+                    <h3 data-en="YouTube Premium VIP" data-ar="اشتراك يوتيوب بريميوم">اشتراك يوتيوب بريميوم</h3>
+                    <h4 class="vip-subtitle" data-en="Individual Year" data-ar="فردي سنة">فردي سنة</h4>
+                    <p class="vip-note" data-en="No Family Group" data-ar="بدون مجموعة عائلية">بدون مجموعة عائلية</p>
+                </div>
+                <div class="youtube-mockup vip-mockup">
+                    <div class="purple-play-btn"><i class="fa-solid fa-play"></i></div>
+                    <span data-en="YouTube Premium Individual" data-ar="YouTube Premium Individual">YouTube
+                        Premium<br>Individual</span>
+                </div>
+
+                <div class="price-area">
+                    <span class="currency" data-en="SAR" data-ar="ريال">ريال</span>
+                    <span class="amount" style="color: #1e3a8a;">130</span>
+                </div>
+                <div class="savings-tag" data-en="Save 200 SAR" data-ar="وفر حتى 200 ريال">وفر حتى 200 ريال</div>
+
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> <span data-en="No family group needed"
+                            data-ar="بدون الدخول فى مجموعة عائلية">بدون الدخول فى مجموعة عائلية</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Works on 7 devices"
+                            data-ar="يشتغل على 7 اجهزة فى وقت واحد">يشتغل على 7 اجهزة فى وقت واحد</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Ad-free viewing"
+                            data-ar="مشاهدة بدون إعلانات">مشاهدة بدون إعلانات</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Offline downloads"
+                            data-ar="تنزيل المحتوى للمشاهدة لاحقا">تنزيل المحتوى للمشاهدة لاحقا</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Background play"
+                            data-ar="تشغيل الفيديو في الخلفية">تشغيل الفيديو في الخلفية</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-en="Access to YouTube Music"
+                            data-ar="الوصول إلى يوتيوب ميوزك">الوصول إلى يوتيوب ميوزك</span></li>
+                </ul>
+
+                <a href="https://sarpemium.com/collections/watch" class="plan-btn vip-btn" data-en="Subscribe Now"
+                    data-ar="اشترك الآن">اشترك الآن</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <div class="cta-content">
+            <h2 data-en="Get the Best YouTube Experience Now" data-ar="احصل على أفضل تجربة يوتيوب الآن">احصل على أفضل
+                تجربة يوتيوب الآن</h2>
+            <p data-en="Enjoy ad-free viewing and exclusive features"
+                data-ar="استمتع بمشاهدة محتوى اليوتيوب بدون إعلانات وبمميزات حصرية">استمتع بمشاهدة محتوى اليوتيوب بدون
+                إعلانات وبمميزات حصرية</p>
+            <a href="https://sarpemium.com/collections/watch" class="cta-btn" data-en="Subscribe Now"
+                data-ar="اشترك الآن">اشترك الآن</a>
+
+            <div class="timer-wrapper">
+                <p class="timer-label" data-en="Offer ends in:" data-ar="ينتهي العرض خلال:">ينتهي العرض خلال:</p>
+                <div class="countdown-timer">
+                    <div class="timer-box">
+                        <span id="seconds">00</span>
+                        <span class="label" data-en="Seconds" data-ar="ثانية">ثانية</span>
+                    </div>
+                    <div class="timer-box">
+                        <span id="minutes">00</span>
+                        <span class="label" data-en="Minutes" data-ar="دقيقة">دقيقة</span>
+                    </div>
+                    <div class="timer-box">
+                        <span id="hours">00</span>
+                        <span class="label" data-en="Hours" data-ar="ساعة">ساعة</span>
+                    </div>
+                    <div class="timer-box">
+                        <span id="days">00</span>
+                        <span class="label" data-en="Days" data-ar="يوم">يوم</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-title">
+            <h2 data-en="Subscription Features" data-ar="مميزات الاشتراك في يوتيوب بريميوم">مميزات الاشتراك في يوتيوب
+                بريميوم</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card" data-aos="fade-up">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-ban"></i>
+                </div>
+                <h3 data-en="Ad-free" data-ar="بدون إعلانات">بدون إعلانات</h3>
+                <p data-en="Watch videos without interruption"
+                    data-ar="استمتع بمشاهدة الفيديوهات بدون أي مقاطعة من الإعلانات المزعجة">استمتع بمشاهدة الفيديوهات
+                    بدون أي مقاطعة من الإعلانات المزعجة</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+                <h3 data-en="Downloads" data-ar="تنزيل الفيديوهات">تنزيل الفيديوهات</h3>
+                <p data-en="Save videos for later"
+                    data-ar="حمل الفيديوهات المفضلة لديك وشاهدها لاحقاً بدون الحاجة للإنترنت">حمل الفيديوهات المفضلة
+                    لديك وشاهدها لاحقاً بدون الحاجة للإنترنت</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <h3 data-en="YouTube Music" data-ar="يوتيوب ميوزك">يوتيوب ميوزك</h3>
+                <p data-en="Listen to music ad-free" data-ar="استمع للموسيقى بدون إعلانات واستمتع بتشغيلها في الخلفية">
+                    استمع للموسيقى بدون إعلانات واستمتع بتشغيلها في الخلفية</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3 data-en="Background Play" data-ar="تشغيل في الخلفية">تشغيل في الخلفية</h3>
+                <p data-en="Keep playing while using other apps"
+                    data-ar="استمر في الاستماع للمحتوى أثناء استخدام تطبيقات أخرى على جهازك">استمر في الاستماع للمحتوى
+                    أثناء استخدام تطبيقات أخرى على جهازك</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-user-slash"></i>
+                </div>
+                <h3 data-en="Individual Subscription" data-ar="اشتراك فردي">اشتراك فردي</h3>
+                <p data-en="Individual plan for you alone"
+                    data-ar="اشتراك فردي لك وحدك بدون الدخول في مجموعات و يدعم حتى 7 اجهزة">اشتراك فردي لك وحدك بدون
+                    الدخول في مجموعات و يدعم حتى 7 اجهزة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us-section">
+        <div class="section-title">
+            <h2 data-en="Why Choose Us?" data-ar="لماذا تختار خدماتنا؟">لماذا تختار خدماتنا؟</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="why-us-container">
+            <!-- Left Side: Image -->
+            <div class="why-us-image" data-aos="fade-right">
+                <div class="image-placeholder-card">
+                    <img src="images/Hero.jpg" alt="YouTube Premium" class="why-us-img">
+                </div>
+            </div>
+
+            <!-- Right Side: Benefits -->
+            <div class="why-us-content" data-aos="fade-left">
+                <ul class="benefits-list">
+                    <!-- Item 1 -->
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3 data-en="Golden Guarantee" data-ar="الضمان الذهبي من بريميوم">الضمان الذهبي من بريميوم
+                            </h3>
+                            <p data-en="100% guarantee on all subscriptions"
+                                data-ar="نقدم ضمان مضمون 100% على جميع اشتراكاتنا مع استبدال فوري في حالة وجود أي مشكلة">
+                                نقدم ضمان مضمون 100% على جميع اشتراكاتنا مع استبدال فوري في حالة وجود أي مشكلة</p>
+                        </div>
+                    </li>
+
+                    <!-- Item 2 -->
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3 data-en="Instant Activation" data-ar="تفعيل فوري">تفعيل فوري</h3>
+                            <p data-en="Immediate activation after payment"
+                                data-ar="نقوم بتفعيل اشتراكك بشكل فوري بعد إتمام عملية الدفع">نقوم بتفعيل اشتراكك بشكل
+                                فوري بعد إتمام عملية الدفع</p>
+                        </div>
+                    </li>
+
+                    <!-- Item 3 -->
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3 data-en="24/7 Support" data-ar="دعم فني على مدار الساعة">دعم فني على مدار الساعة</h3>
+                            <p data-en="Support team available anytime"
+                                data-ar="فريق الدعم الفني متاح للمساعدة في أي وقت لحل أي مشكلة">فريق الدعم الفني متاح
+                                للمساعدة في أي وقت لحل أي مشكلة</p>
+                        </div>
+                    </li>
+
+                    <!-- Item 4 -->
+                    <li class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3 data-en="Multiple Payment Methods" data-ar="طرق دفع متعددة">طرق دفع متعددة</h3>
+                            <p data-en="Secure and easy payment options"
+                                data-ar="نوفر العديد من طرق الدفع الآمنة والسهلة لراحتك">نوفر العديد من طرق الدفع الآمنة
+                                والسهلة لراحتك</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="section-title">
+            <h2 data-en="Customer Reviews" data-ar="آراء عملائنا">آراء عملائنا</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="reviews-container">
+            <!-- Left Arrow -->
+            <button class="carousel-arrow carousel-arrow-left" id="carousel-prev" aria-label="Previous Review">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card" data-aos="fade-up">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text"
+                        data-en="Excellent and fast service! The subscription was activated within minutes and everything works perfectly!"
+                        data-ar="خدمة ممتازة وسريعة، تم تفعيل الاشتراك خلال دقائق وكل شيء يعمل بشكل رائع!">خدمة ممتازة
+                        وسريعة، تم تفعيل الاشتراك خلال دقائق وكل شيء يعمل بشكل رائع!</p>
+                    <h4 class="reviewer-name" data-en="Ahmed S." data-ar="أحمد س.">أحمد س.</h4>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text"
+                        data-en="Competitive prices and outstanding customer service. I highly recommend dealing with them with full confidence."
+                        data-ar="أسعار منافسة وخدمة عملاء متميزة، أنصح بالتعامل معهم بكل ثقة.">أسعار منافسة وخدمة عملاء
+                        متميزة، أنصح بالتعامل معهم بكل ثقة.</p>
+                    <h4 class="reviewer-name" data-en="Mohamed A." data-ar="محمد ع.">محمد ع.</h4>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text"
+                        data-en="I subscribed to the annual plan and saved a lot. The service works perfectly without any issues."
+                        data-ar="اشتركت في الباقة السنوية ووفرت الكثير، والخدمة تعمل بشكل ممتاز بدون أي مشاكل.">اشتركت
+                        في
+                        الباقة السنوية ووفرت الكثير، والخدمة تعمل بشكل ممتاز بدون أي مشاكل.</p>
+                    <h4 class="reviewer-name" data-en="Sarah M." data-ar="سارة م.">سارة م.</h4>
+                </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="carousel-arrow carousel-arrow-right" id="carousel-next" aria-label="Next Review">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section">
+        <div class="footer-container">
+            <!-- Column 1: Branding -->
+            <div class="footer-col branding-col">
+                <h3 class="footer-logo">SAR Premium</h3>
+                <p data-en="The optimal solution for a premium viewing experience"
+                    data-ar="الحل الأمثل لتجربة مشاهدة مميزة">الحل الأمثل لتجربة مشاهدة مميزة</p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col links-col">
+                <h3 data-en="Quick Links" data-ar="روابط سريعة">روابط سريعة</h3>
+                <div class="underline-small"></div>
+                <ul>
+                    <li><a href="#plans" data-en="Plans & Prices" data-ar="الباقات والاسعار">الباقات والاسعار</a></li>
+                    <li><a href="#features" data-en="How to Subscribe" data-ar="كيفية الاشتراك">كيفية الاشتراك</a></li>
+                    <li><a href="#" data-en="FAQ" data-ar="الأسئلة الشائعة">الأسئلة الشائعة</a></li>
+                    <li><a href="#contact" data-en="Contact Us" data-ar="اتصل بنا">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact -->
+            <div class="footer-col contact-col">
+                <h3 data-en="Contact Us" data-ar="تواصل معنا">تواصل معنا</h3>
+                <div class="underline-small"></div>
+
+                <div class="contact-buttons">
+                    <!-- Call Button -->
+                    <a href="tel:+966592651561" class="contact-btn call-btn">
+                        <div class="c-info">
+                            <span class="c-label" data-en="Direct Call" data-ar="اتصال مباشر">اتصال مباشر</span>
+                            <span class="c-number" dir="ltr">+966 59 265 1561</span>
+                        </div>
+                        <div class="c-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/966592651561" target="_blank" class="contact-btn whatsapp-btn">
+                        <div class="c-info">
+                            <span class="c-label" data-en="WhatsApp" data-ar="واتساب">واتساب</span>
+                            <span class="c-number" dir="ltr">+966 59 265 1561</span>
+                        </div>
+                        <div class="c-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-en="© 2026 All Rights Reserved" data-ar="© 2026 جميع الحقوق محفوظة">© 2026 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
