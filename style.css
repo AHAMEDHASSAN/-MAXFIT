@@ -103,48 +103,30 @@ body.light-mode {
 /* Logo - Robust Text & Icon Design */
 .logo-wrapper {
     display: inline-flex !important;
-    /* Use inline-flex to shrink to content */
     align-items: center;
     justify-content: center;
-    gap: 0 !important;
-    /* Zero gap to keep them stuck together */
     transition: var(--transition);
     cursor: pointer;
-    line-height: 1;
-    width: auto !important;
 }
 
-.logo-bolt,
-.logo-brand {
-    flex: none !important;
-}
-
-.logo-bolt {
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+.main-logo-img {
+    height: 50px;
+    /* Professional height for header */
+    width: auto;
+    object-fit: contain;
+    filter: invert(1);
+    /* Inverts black logo to white and white background to black */
     transition: var(--transition);
-    margin: 0 !important;
-    /* Ensure no margin around icon */
-    padding: 0 !important;
 }
 
-.logo-brand {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    font-size: 1.8rem;
-    color: #FFFFFF;
-    letter-spacing: -0.5px;
-    /* Slight negative spacing to bring letters closer */
-    transition: var(--transition);
-    line-height: 1;
-    margin: 0 !important;
+.logo-wrapper:hover .main-logo-img {
+    transform: scale(1.05);
 }
 
-.accent-text {
-    color: #FFFFFF;
-    opacity: 1;
-    /* Pure white for maximum visibility */
+/* Footer should also show correctly */
+.footer-logo .main-logo-img {
+    height: 60px;
+    filter: invert(1);
 }
 
 .logo-wrapper:hover .logo-bolt {
@@ -490,7 +472,10 @@ body:not(.light-mode) .lang-menu li.selected {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop') no-repeat center center/cover;
+    background-image: url('https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=1600&auto=format&fit=crop');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     color: #FFFFFF;
     overflow: hidden;
     padding: 160px 20px 100px;
@@ -507,8 +492,8 @@ body:not(.light-mode) .lang-menu li.selected {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    /* Slightly darker overlay */
+    background: rgba(0, 0, 0, 0.4);
+    /* Reduced overlay opacity from 0.6 to 0.4 for better visibility */
     z-index: 1;
 }
 
